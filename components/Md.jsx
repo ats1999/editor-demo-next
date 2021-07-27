@@ -41,9 +41,11 @@ function Viewer(props){
     return <V {...props} />;
 }
 
-export default function MD(){
+function MD(){
     return <p>Error !</p>
 }
 
 MD.Editor = Editor;
 MD.Viewer = Viewer;
+
+export default MD
