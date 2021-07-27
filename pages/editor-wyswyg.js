@@ -1,5 +1,5 @@
-import { Editor } from "../components/Md";
+import MD from "../components/Md";
 
 export default function EditorLight() {
-    return <Editor theme="light" initialEditType="wyswyg" />
+    return <MD.Editortheme="light" initialEditType="wyswyg" />
 }

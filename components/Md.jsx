@@ -33,10 +33,17 @@ const V = dynamic(() => import("mdv10"), {
   loading: () => <h1>Getting data...</h1>,
 });
 
-export function Editor(props){
+function Editor(props){
     return <E {...props} />;
 }
 
-export function Viewer(props){
+function Viewer(props){
     return <V {...props} />;
 }
+
+export default function MD(){
+    return <p>Error !</p>
+}
+
+MD.Editor = Editor;
+MD.Viewer = Viewer;

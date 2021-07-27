@@ -1,7 +1,7 @@
-import { Editor } from "../components/Md";
+import MD from "../components/Md";
 
 export default function EditorDarkAll() {
-    return <Editor 
+    return <MD.Editor
         initialValue={`
 # Hello, i am [Rahul](https://ats1999.github.io)
 

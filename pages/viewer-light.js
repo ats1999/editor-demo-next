@@ -1,7 +1,7 @@
-import { Viewer } from "../components/Md";
+import MD from "../components/Md";
 
 export default function ViewerLight() {
-    return <Viewer theme="light"
+    return <MD.Viewer theme="light"
         md={`
 # Hello, i am [Rahul](https://ats1999.github.io)
 
