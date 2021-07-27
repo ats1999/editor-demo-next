@@ -20,11 +20,19 @@ import dynamic from "next/dynamic";
 // export const Editor = MDE;
 // export const Viewer = MDV;
 
-export const Editor = dynamic(() => import("mde10"), {
+
+
+
+const E = dynamic(() => import("mde10"), {
   ssr: false,
   loading: () => <h1>Loading...</h1>,
 });
-export const Viewer = dynamic(() => import("mdv10"), {
+
+const V = dynamic(() => import("mdv10"), {
   ssr: false,
   loading: () => <h1>Getting data...</h1>,
 });
+
+export const Editor = (props) => <E {...props} />;
+
+export const Viewer = (props) => <V {...props} />;
