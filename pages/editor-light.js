@@ -1,5 +1,5 @@
-import MD from "../components/Md";
+import {Editor,Viewer}from "../components/Md";
 
 export default function EditorLight(){
-    return <MD.Editor theme="light"/>
+    return <Editor theme="light"/>
 }

@@ -1,7 +1,7 @@
-import MD from "../components/Md";
+import {Editor,Viewer}from "../components/Md";
 
 export default function EditorDarkAll() {
-    return <MD.Editor 
+    return <Editor 
     theme="light"
         initialValue={`
 # Hello, i am [Rahul](https://ats1999.github.io)

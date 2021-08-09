@@ -1,4 +1,4 @@
-import MD from "../components/Md";
+import {Editor,Viewer}from "../components/Md";
 import {useEffect} from "react";
 export default function ViewerDark() {
     useEffect(()=>{
@@ -9,7 +9,7 @@ export default function ViewerDark() {
             el.style.backgroundColor = "white"
         }
     },[]);
-    return <MD.Viewer 
+    return <Viewer 
         md={`
 # Hello, i am [Rahul](https://ats1999.github.io)
 
